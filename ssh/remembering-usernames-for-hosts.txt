@@ -1,0 +1,7 @@
+you can create an SSH config file in ~/.ssh/config
+
+Host <your-machine-alias>
+    HostName <hostname>
+    Port <your-port>
+    User <your-user>
+
