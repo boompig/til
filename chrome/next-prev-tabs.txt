@@ -1,0 +1,2 @@
+next tab        command+option+right
+prev tab        command+option+left
