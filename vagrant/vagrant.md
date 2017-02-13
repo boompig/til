@@ -40,6 +40,10 @@ config.vm.network :forwarded_port, guest:$guest_port, host: $host_port
 
 fill in `$guest_port` and `$host_port`
 
+## Syncing folders
+
+By default the directory with `Vagrantfile` is called the project directory and is synced to Vagrant in the `/vagrant` directory
+
 ## Destroy
 
 vagrant destroy
