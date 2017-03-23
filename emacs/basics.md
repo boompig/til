@@ -11,3 +11,9 @@ then
 ## Save File (buffer)
 
 `C-x C-s`
+
+## Quit
+
+save-buffers-kill-emacs
+
+`C-x C-c`

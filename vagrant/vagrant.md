@@ -2,9 +2,9 @@
 
 ## Create new container & Vagrantfile
 
-vagrant init `hashicorp/$linux_flavour`
+vagrant init `$box`
 
-fill in your favourite `$linux_flavour`
+fill in your favourite `$box` from [here](https://atlas.hashicorp.com/boxes/search)
 
 ## Boot container
 
