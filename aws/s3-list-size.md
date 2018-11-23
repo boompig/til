@@ -9,3 +9,5 @@ aws s3 ls s3://mybucket --recursive --human-readable --summarize
 ```
 
 Note that `--recursive` will print the contents of the bucket as well, and might be expensive if you have many small objects. However the command will not work without `--recursive` and will return an incorrect size without it.
+
+[Source](https://docs.aws.amazon.com/cli/latest/reference/s3/ls.html)
