@@ -9,3 +9,5 @@ It's also a little easier managing the state of infrastructure: you can use it t
 ## Tips
 
 You can delete a resource from the state with `tf state rm ...`
+
+You can generate graphs with `tf graph`
