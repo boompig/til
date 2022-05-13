@@ -26,3 +26,5 @@ All fixtures can clean up after themselves by yielding a value, then having clea
 ## Mock
 
 Instead of passing a plain `mock.MagicMock` instance to mock out a class or function, you can pass an auto-spec'd instance (`mock.create_autospec`) that ensures the mocked instance is only called with valid methods and functions have the right number of arguments.
+
+If you need to patch a method of a specific instance, you can use `mock.patch.object` instead.
