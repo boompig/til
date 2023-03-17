@@ -1,0 +1,1 @@
+To enable auto-reloading take a look at [this blogpost](https://techinscribed.com/5-ways-to-live-reloading-go-applications/) and the recommended solution which is [Air](https://github.com/cosmtrek/air).
