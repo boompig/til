@@ -4,6 +4,9 @@ Individual tests can be selected with the `-k` switch
 
 Usually you want to specify `-x`: stop after first failed test
 
+You can ignore deprecation warnings specifically with `-W ignore::DeprecationWarning`. You can also specify specifically what warning to ignore in a pytest.ini file.
+[Read this question](https://stackoverflow.com/a/53218641/755934) for more tips regarding handling warnings.
+
 ### Output Capture
 
 Normally when all tests pass, there is no output.
