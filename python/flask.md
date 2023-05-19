@@ -1,4 +1,4 @@
-# Gunicorn
+# Flask
 
 If you register API handlers in blueprints using the following:
 
