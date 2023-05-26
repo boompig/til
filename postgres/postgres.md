@@ -44,3 +44,13 @@ You can get the server's version with this query:
 ```
 show server_version;
 ```
+
+## limiting updates to a single row
+
+You can make sure your update only hits a single row using the `TOP` syntax. See [this question](https://stackoverflow.com/a/26929469/755934) for more info.
+
+```
+UPDATE TOP (1) table1 
+SET name2 = '01' 
+WHERE name1='xx'
+```
