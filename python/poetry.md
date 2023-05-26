@@ -9,3 +9,7 @@ To generate a requirements file for pip, do this:
 poetry export --without-hashes --format=requirements.txt > requirements.txt
 ```
 
+## add to dev dependency
+
+Use the `-D` switch
+
