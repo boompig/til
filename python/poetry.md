@@ -11,5 +11,11 @@ poetry export --without-hashes --format=requirements.txt > requirements.txt
 
 ## add to dev dependency
 
-Use the `-D` switch
+Use the `-D` switch, or `--group dev`
+
+## install dev dependencies
+
+```
+poetry install --with dev
+```
 
