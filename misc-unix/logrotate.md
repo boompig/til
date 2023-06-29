@@ -1,6 +1,6 @@
 # logrotate
 
-logrotate is a utility to automatically rotate logs.
+`logrotate` is a utility to automatically rotate logs.
 
 This can be extremely helpful for access/error logs on servers which can grow to enormous sizes if left unchecked.
 Here is a nice sample configuration for a project called "hemingway".

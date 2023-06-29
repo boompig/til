@@ -14,6 +14,15 @@ This can be annoying when trying to collect metrics.
 
 To disable output capture, use the `-s` switch.
 
+### Verifying exceptions are raised
+
+Use `pytest.raises` context manager. For example:
+
+```
+with pytest.raises(Exception):
+    test()
+```
+
 ## Warnings
 
 To disable warnings, you can pass the -W switch without any arguments.
