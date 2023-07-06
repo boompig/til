@@ -16,6 +16,17 @@ ADD CONSTRAINT chk_val CHECK (col in ('yes','no','maybe'))
 You can enable statement-level logging. Various options are documented [here](https://stackoverflow.com/a/8208945/755934).
 The relevant files on a Mac are documented [on the Postgres.App website](https://postgresapp.com/documentation/configuration-general.html).
 
+## Date Manipulation with intervals
+
+If you have a column called `inserted_at` you can run this statement:
+
+```
+UPDATE landlord_messages
+SET inserted_at=now() - interval '1 day'
+WHERE uuid=:uuid;
+```
+
+Note the `interval` keyword.
 
 
 ## Statement Timeouts
