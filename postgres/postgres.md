@@ -1,5 +1,17 @@
 # Postgres
 
+## Escaping Quotes
+
+You can escape quotes by doing the following:
+
+```
+UPDATE landlord_messages
+SET contents='Hey what''s up'
+WHERE uuid=:uuid;
+```
+
+Note the double `''`.
+
 ## Constraints
 
 You cannot modify a constraint except to enable/disable it. You must drop it and create a new one (for example to add `ON DELETE CASCADE`).
