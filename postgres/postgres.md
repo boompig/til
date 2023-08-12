@@ -77,3 +77,26 @@ UPDATE TOP (1) table1
 SET name2 = '01' 
 WHERE name1='xx'
 ```
+
+## Scripts
+
+To use variables in scripts, use the `\set` command. For example:
+
+```
+\set foo 3
+\set bar 'hello world'
+```
+
+You can then reference the variable with the `:varname` syntax in queries. For example:
+
+```
+SELECT * FROM users WHERE id = :user_id;
+```
+
+There is some strangeness in these cases with string/quoted variables. To get around it, use this syntax:
+
+```
+UPDATE messages SET contents = :'msg_contents' WHERE user_id = :user_id;
+```
+
+Notice that the variable name is quoted while the colon appears before the quote.
