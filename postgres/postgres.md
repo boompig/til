@@ -100,3 +100,24 @@ UPDATE messages SET contents = :'msg_contents' WHERE user_id = :user_id;
 ```
 
 Notice that the variable name is quoted while the colon appears before the quote.
+
+## `split_part`
+
+Postgresql has a built-in function to split strings pairs called [split\_part](https://www.postgresql.org/docs/9.1/functions-string.html).
+Example usage to get domains from email addresses:
+
+```
+SELECT email, split_part(email, '@', 2) AS domain FROM users;
+```
+
+## `make_interval`
+
+Postgresql has a built-in function to make intervals using variables called [make\_interval](https://www.postgresql.org/docs/current/functions-datetime.html).
+Example usage:
+
+```
+SELECT make_interval(days => 10);
+```
+
+Note that this can also be used with a variable in place of the 10.
+
