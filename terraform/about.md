@@ -11,3 +11,7 @@ It's also a little easier managing the state of infrastructure: you can use it t
 You can delete a resource from the state with `tf state rm ...`
 
 You can generate graphs with `tf graph`
+
+## Managing State
+
+You can remove an old resource from the state with `tf state rm <name-of-resource>`
