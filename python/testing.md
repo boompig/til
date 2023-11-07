@@ -23,6 +23,11 @@ with pytest.raises(Exception):
     test()
 ```
 
+### Logging
+
+You can set the log level from the CLI. Use the `--log-cli-level` switch (e.g. `--log-cli-level=INFO`).
+See [this Stack Overflow answer for details](https://stackoverflow.com/a/55451980/755934).
+
 ## Warnings
 
 To disable warnings, you can pass the -W switch without any arguments.
