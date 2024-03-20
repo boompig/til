@@ -121,3 +121,19 @@ SELECT make_interval(days => 10);
 
 Note that this can also be used with a variable in place of the 10.
 
+## Updates with query rather than value
+
+If you want to do a mass update, you can use an update-from statement such as the following:
+
+```sql
+UPDATE renter_leads
+SET leasing_team_id=t.leasing_team_id
+FROM (
+    SELECT l.uuid AS lead_uuid, l.owner AS owner, u.leasing_team_id AS leasing_team_id
+    FROM renter_leads AS l
+    JOIN users AS u ON l.owner=u.id
+    WHERE l.leasing_team_id IS NULL
+) AS t
+WHERE t.lead_uuid=renter_leads.uuid
+AND renter_leads.leasing_team_id IS NULL;
+```
